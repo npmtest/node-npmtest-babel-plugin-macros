@@ -35,34 +35,17 @@
 ```json
 
 {
-    "name": "babel-plugin-macros",
-    "version": "1.0.15",
-    "description": "Macros for JavaScript via a babel plugin.",
-    "main": "lib/index.js",
-    "scripts": {
-        "build": "babel -d ./lib ./src",
-        "prepublish": "npm run test",
-        "pretest": "npm run build && npm run lint",
-        "test": "mocha",
-        "watch": "mocha --watch",
-        "lint": "eslint **/*.js"
+    "author": {
+        "name": "Charles Pick"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/codemix/babel-plugin-macros"
-    },
-    "keywords": [
-        "babel",
-        "babel-plugin",
-        "macros",
-        "ast"
-    ],
-    "author": "Charles Pick <charles@codemix.com>",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/codemix/babel-plugin-macros/issues"
     },
-    "homepage": "https://github.com/codemix/babel-plugin-macros",
+    "dependencies": {
+        "babel-traverse": "^6.5.0",
+        "babel-types": "^6.5.2"
+    },
+    "description": "Macros for JavaScript via a babel plugin.",
     "devDependencies": {
         "babel-cli": "^6.5.1",
         "babel-core": "^6.5.2",
@@ -75,10 +58,45 @@
         "mocha": "^2.4.5",
         "should": "^8.2.2"
     },
-    "dependencies": {
-        "babel-traverse": "^6.5.0",
-        "babel-types": "^6.5.2"
-    }
+    "directories": {},
+    "dist": {
+        "shasum": "cd6234d12b8fd1fb81f9feb371ba4735a21781f6",
+        "tarball": "https://registry.npmjs.org/babel-plugin-macros/-/babel-plugin-macros-1.0.15.tgz"
+    },
+    "gitHead": "1416bffe1e0c0ddba80ffdfd8e7084092f72c3da",
+    "homepage": "https://github.com/codemix/babel-plugin-macros",
+    "keywords": [
+        "babel",
+        "babel-plugin",
+        "macros",
+        "ast"
+    ],
+    "license": "MIT",
+    "main": "lib/index.js",
+    "maintainers": [
+        {
+            "name": "codemix"
+        },
+        {
+            "name": "gvozd"
+        }
+    ],
+    "name": "babel-plugin-macros",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codemix/babel-plugin-macros.git"
+    },
+    "scripts": {
+        "build": "babel -d ./lib ./src",
+        "lint": "eslint **/*.js",
+        "prepublish": "npm run test",
+        "pretest": "npm run build && npm run lint",
+        "test": "mocha",
+        "watch": "mocha --watch"
+    },
+    "version": "1.0.15",
+    "bin": {}
 }
 ```
 
